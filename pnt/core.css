@@ -8,6 +8,8 @@ body {
 	padding: 0;
 	text-decoration: none;
 	box-sizing: border-box;
+	font-family: "Rubik", Arial, Helvetica, sans-serif;
+	font-weight: normal;
 }
 
 .pnt.pnt_container {
@@ -15,4 +17,36 @@ body {
 	top: 0;
 	right: 0;
 	color: #fff;
+}
+
+.pnt.pnt_message_body {
+	/* Default values will be overwritten by JS later */
+	--body-width: 500px;
+	--message-color: green;
+	--message-close-button-display-style: block;
+	width: var(--body-width);
+	margin: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	background: var(--message-color);
+	display: grid;
+	grid-template-columns: 1fr 30px;
+	grid-template-rows: 30px 1fr;
+	align-items: center;
+	row-gap: 10px;
+	column-gap: 20px;
+}
+
+.pnt.pnt.pnt_message_title {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.pnt.pnt.pnt_message_close_button {
+	display: var(--message-close-button-display-style);
+}
+
+.pnt.pnt_message_text {
+	grid-column: span 2;
+	font-size: 16px;
 }
