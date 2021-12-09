@@ -17,6 +17,9 @@ body {
 	top: 0;
 	right: 0;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 .pnt.pnt_message_body {
@@ -79,6 +82,6 @@ body {
 	font-size: 17px;
 }
 
-.pnt.pnt.pnt_message_body.pnt_slide_right {
+.pnt.pnt_message_body.pnt_slide_right {
 	transform: translateX(calc(var(--message-body-width) + 20px));
 }
