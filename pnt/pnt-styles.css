@@ -16,6 +16,7 @@ body {
 	position: absolute;
 	top: 0;
 	right: 0;
+	overflow: hidden;
 }
 
 .pnt.pnt_message_body {
@@ -24,9 +25,11 @@ body {
 	--message-color: green;
 	--message-close-button-display-style: block;
 	--message-text-color: #ccc;
+	--animaton-duration: 0.5s;
+	--animation-interpolation: cubic-bezier(0.075, 0.82, 0.165, 1);
 	color: var(--message-text-color);
 	width: var(--message-body-width);
-	margin: 20px;
+	margin: 20px 20px 0 0;
 	padding: 10px;
 	border-radius: 5px;
 	background: var(--message-color);
@@ -36,6 +39,8 @@ body {
 	align-items: center;
 	row-gap: 10px;
 	column-gap: 20px;
+	transform: translateX(0);
+	transition: transform var(--animaton-duration) var(--animation-interpolation);
 }
 
 .pnt.pnt_message_title {
@@ -47,6 +52,8 @@ body {
 	display: var(--message-close-button-display-style);
 	position: relative;
 	cursor: pointer;
+	width: 100%;
+	height: 100%;
 }
 
 .pnt.pnt_message_close_button_element {
@@ -69,5 +76,9 @@ body {
 
 .pnt.pnt_message_text {
 	grid-column: span 2;
-	font-size: 16px;
+	font-size: 17px;
+}
+
+.pnt.pnt.pnt_message_body.pnt_slide_right {
+	transform: translateX(calc(var(--message-body-width) + 20px));
 }
