@@ -14,11 +14,10 @@ const pnt = {
 		// Specifies if pnt pulls it's default font "Rubik" from google fonts.
 		// If this option is disabled and the user doesn't have the font installed, pnt will use a fallback font
 		pullFromGooglefonts: true,
-		// Specifies the maximum width of the container.
-		// If "useFixedWidth" is enabled, this will be the width of all messages
-		containerMaxWidth: 400,
 		// Specifies the max width of the container and the contents inside it. Use it to control how "long" your messages will be
-		animationDuration: 400,
+		containerMaxWidth: 400, // (px)
+		// The amount of time an animation will take to complete
+		animationDuration: 400, // (ms)
 		// Set the interpolation for the adding and removing of messages
 		animationInterpolation: "cubic-bezier(0.075, 0.82, 0.165, 1)",
 		// Turn debug mode on / off. Debug mode will post logs of the current events to the console
@@ -35,9 +34,6 @@ const pnt = {
 
 		document.head.appendChild(link);
 	},
-
-	isLocked: false,
-	virtualDomElements: [],
 
 	ID_PREFIX: "pnt_message:",
 	BUTTON_PREFIX: "pnt_button:",
@@ -170,7 +166,7 @@ const pnt = {
 
 		clearOrphaned: () => {
 			pnt.getDomMessageNodes().forEach((message) => {
-				if (!message.classList.contains("pnt_slide_right")) return;
+				if (!message.classList.contains(pnt.SLIDE_CSS_CLASS_NAME)) return;
 				if (pnt.config.debug) console.log("removing orphaned: " + message.id);
 				pnt.message.removeFromDom(message.id);
 			});
