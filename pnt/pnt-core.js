@@ -1,4 +1,8 @@
 // PNT: Extremely light vanilla JS notifications library
+//
+//								IMPORTANT
+//	DO NOT USE WITH UNSANATIZED USER INPUT FROM THE BACKEND!!! (XSS)
+//
 
 const init = () => {
 	if (!document.querySelector(".pnt_container")) {
