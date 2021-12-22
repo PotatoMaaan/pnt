@@ -139,7 +139,7 @@ const pnt = {
 	},
 
 	presets: {
-		success: (title, message, decayTime = 5000) => {
+		success: (message, title, decayTime = 5000) => {
 			pnt.compose(message, title, "green", "white", true, decayTime);
 		},
 		info: (message, title = "Info", decayTime = 5000) => {
