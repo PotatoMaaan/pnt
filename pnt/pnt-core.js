@@ -139,16 +139,16 @@ const pnt = {
 	},
 
 	presets: {
-		success: (message, title = "Success", decayTime = 5000) => {
+		success: (message = "", title = "Success", decayTime = 5000) => {
 			pnt.compose(message, title, "green", "white", true, decayTime);
 		},
-		info: (message, title = "Info", decayTime = 5000) => {
+		info: (message = "", title = "Info", decayTime = 5000) => {
 			pnt.compose(message, title, "blue", "white", true, decayTime);
 		},
-		warn: (message, title = "Warning", decayTime = 8000) => {
+		warn: (message = "", title = "Warning", decayTime = 8000) => {
 			pnt.compose(message, title, "orange", "white", true, decayTime);
 		},
-		error: (message, title = "Error", decayTime = 8000) => {
+		error: (message = "", title = "Error", decayTime = 8000) => {
 			pnt.compose(message, title, "red", "white", true, decayTime);
 		},
 
