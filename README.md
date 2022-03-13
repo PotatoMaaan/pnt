@@ -1,9 +1,11 @@
-# PNT
+# PNT: Extremely lightweight (and shitty) vanilla Js notifications Library
 
-Extremely lightweight (and shitty) vanilla Js notifications Library
 ![Info](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Info.png)
+
 ![Success](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Success.png)
+
 ![Warning](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Warning.png)
+
 ![Error](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Error.png)
 
 # Usage
