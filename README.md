@@ -1,6 +1,10 @@
 # PNT
 
 Extremely lightweight (and shitty) vanilla Js notifications Library
+![Info](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Info.png)
+![Success](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Success.png)
+![Warning](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Warning.png)
+![Error](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Error.png)
 
 # Usage
 This section will detail how to use PNT in your project
@@ -11,6 +15,35 @@ To include PNT in your website you just need to place the `pnt-core.js` and the 
 <link rel="stylesheet" href="pnt-styles.css" />
 <script src="pnt-core.js"></script>
 ```
+
+## Using PNT to create a notification
+### Using presets
+Presets offer a quick way to add a pre-made notification. Presets use the following syntax
+`pnt.presets.preset("message", "title", decayTime)`
+
+Here we are creating a sample message using the `info` preset
+```js
+pnt.presets.info("Your message goes here");
+```
+![Sample Notification](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Info.png)
+### All presets:
+| Preset | Color | Decay Time |
+| --- | --- | --- |
+| `info` | blue | 5000ms |
+| `success` | green | 5000ms |
+| `warn` | yellow | 8000ms | 
+| `error` | red | 8000ms |
+
+### Using `compose` to create a fully custom message
+you can use `pnt.compose` to create a message with fully custom parameters
+
+`compose` uses the following syntax: `pnt.compose("text", "title", "color", "fontColor", isUserRemoveable, decayTime)`
+
+Here we are creating a white message with black text that is not removeable my the user.
+```js
+pnt.compose("Your message goes here", "Your title goes here", "#ffffff", "#000000", false, 5000);
+```
+![Sample Notification](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Custom.png)
 
 ## Configuration
 PNT offers configuration options directly in the code: 
