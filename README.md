@@ -41,7 +41,7 @@ you can use `pnt.compose` to create a message with fully custom parameters
 
 `compose` uses the following syntax: `pnt.compose("text", "title", "color", "fontColor", isUserRemoveable, decayTime)`
 
-Here we are creating a white message with black text that is not removeable my the user.
+Here we are creating a white message with black text that is not removeable by the user.
 ```js
 pnt.compose("Your message goes here", "Your title goes here", "#ffffff", "#000000", false, 5000);
 ```
