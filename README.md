@@ -35,3 +35,7 @@ You *can* edit the values on the fly by doing something like `pnt.config.pullFro
 | `animationDuration` | ms | 400 | The amount of time (in ms) an animation will take to complete | 
 | `animationInterpolation` | - | cubic-bezier(0.075, 0.82, 0.165, 1) | Sets the interpolation for the adding and removing of messages |
 | `debug` | bool | false | Turn debug mode on / off. Debug mode will post logs of the current events to the console |
+
+# Important
+I made this for fun and I did not properly test this. There are also some bugs present right now that I can't really figure out. Most of those bugs occur when trying to spawn or delete a lot of notifications at a time. 
+Becuase of this I would not use this in any serious project. 
