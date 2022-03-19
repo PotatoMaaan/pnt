@@ -37,7 +37,7 @@ pnt.presets.info("Your message goes here");
 | `error` | red | 8000ms |
 
 ### Using `compose` to create a fully custom message
-you can use `pnt.compose` to create a message with fully custom parameters
+You can use `pnt.compose` to create a message with fully custom parameters
 
 `compose` uses the following syntax: `pnt.compose("text", "title", "color", "fontColor", isUserRemoveable, decayTime)`
 
@@ -46,6 +46,9 @@ Here we are creating a white message with black text that is not removeable by t
 pnt.compose("Your message goes here", "Your title goes here", "#ffffff", "#000000", false, 5000);
 ```
 ![Sample Notification](https://raw.githubusercontent.com/PotatoMaaan/pnt/master/sample-images/Custom.png)
+
+## Clearing all messages
+You can clear all messages by invoking `pnt.presets.clearAll();`
 
 ## Configuration
 PNT offers configuration options directly in the code: 
