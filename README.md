@@ -12,7 +12,7 @@
 This section will detail how to use PNT in your project
 
 ## Including PNT in your website
-To include PNT in your website you just need to place the `pnt-core.js` and the `pnt-styles.css` in your website files and include them in any html page on which you want to use it. For Example:
+To include PNT in your website you just need to place `pnt-core.js` and the `pnt-styles.css` in your website files and include them in any html page on which you want to use it. For Example:
 ```html
 <link rel="stylesheet" href="pnt-styles.css" />
 <script src="pnt-core.js"></script>
